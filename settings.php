@@ -99,4 +99,14 @@ if ($hassiteconfig) {
             ''
         )
     );
+
+    // Disable all (developer tools, cut, copy, paste and right click) for following roles
+    $settings->add(
+        new admin_setting_configtextarea(
+            'local_disablerightclick/disableallbyroles',
+            get_string('disableallbyroles', 'local_disablerightclick'),
+            get_string('disableallbyrolesdesc', 'local_disablerightclick'),
+            ''
+        )
+    );
 }

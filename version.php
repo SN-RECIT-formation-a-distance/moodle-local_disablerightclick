@@ -25,8 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$plugin->version  = 2024111301;
+$plugin->release = '1.3.0';
+$plugin->supported = [400, 405];
+$plugin->requires  = 2022041912.00; // Moodle 4.0
 $plugin->component = 'local_disablerightclick';
-$plugin->release = '1.2.0';
-$plugin->version  = 2020081500;
-$plugin->requires = 2017051500;
 $plugin->maturity = MATURITY_STABLE;
+
+/********************* */
+/*namespace local_disablerightclick\external;
+
+require('../../config.php');
+
+use local_disablerightclick\controller as controller;
+
+$controller = new controller();
+$controller->is_allowed();*/

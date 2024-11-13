@@ -52,6 +52,7 @@ class controller {
         } else {
             $context = context::instance_by_id($contextid);
         }
+
         // Check switched role.
         if (!empty($USER->access['rsw'])) {
             $context = context_course::instance(SITEID);
@@ -60,9 +61,27 @@ class controller {
             }
             return false;
         }
+        
         if (has_capability('local/disablerightclick:allow', $context)) {
             return true;
         }
+        
+        $disableallbyroles = explode("\n", get_config('local_disablerightclick', 'disableallbyroles'));
+        foreach($disableallbyroles as &$item){
+            $item = preg_replace('/\s+/', '', $item); // remove all whitespace 
+        }
+        
+        if(count($disableallbyroles) > 0){
+            $userroles = get_user_roles($context, $USER->id, true);            
+            foreach ($userroles as $role) {
+                if(in_array($role->shortname, $disableallbyroles)){
+                    return false;
+                }
+            }
+            return true;
+        }
+
+
         return false;
     }
 

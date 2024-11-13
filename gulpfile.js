@@ -22,19 +22,19 @@ gulp.task('compress', function() {
 
 gulp.task('purgejs', gulp.series(function() {
     return gulp.src('.')
-    .pipe(exec('php ./../../admin/cli/purge_caches.php --js=true'))
+    //.pipe(exec('php ./../../admin/cli/purge_caches.php --js=true'))
     .pipe(notify('Purged JS'));
 }));
 
 gulp.task('purgelang', gulp.series(function() {
     return gulp.src('.')
-    .pipe(exec('php ./../../admin/cli/purge_caches.php --lang=true'))
+   // .pipe(exec('php ./../../admin/cli/purge_caches.php --lang=true'))
     .pipe(notify('Purged Lang'));
 }));
 
 gulp.task('purge', gulp.series(function() {
     return gulp.src('.')
-    .pipe(exec('php ./../../admin/cli/purge_caches.php'))
+   // .pipe(exec('php ./../../admin/cli/purge_caches.php'))
     .pipe(notify('Purged All'));
 }));
 
