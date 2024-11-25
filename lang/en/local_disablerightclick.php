@@ -46,8 +46,8 @@ $string['allowcutcopypaste'] = 'Allow cut, copy and paste';
 $string['allowcutcopypastedesc'] = 'Allow cut, copy and paste on above pages';
 $string['allowdevelopertools'] = 'Allow developer tools';
 $string['allowdevelopertoolsdesc'] = 'Allow developer tools on above pages';
-$string['disableallbyroles'] = 'Disable all';
-$string['disableallbyrolesdesc'] = 'Disable all for the added roles above. Enter each role on a new line. The name of the role added must correspond to the one in Moodle.';
+$string['disableallbyroles'] = 'Disable all by roles';
+$string['disableallbyrolesdesc'] = 'All the following functions will be disabled for all the roles listed above: right-click, cut, copy, paste and development tools.<br/>Enter each role on a new line.<br/>You must place the short names of the roles you wish to prohibit.';
 
 // Warnings.
 $string['rightclick'] = 'Right click is disabled on this site.';

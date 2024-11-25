@@ -46,8 +46,8 @@ $string['allowcutcopypaste'] = 'Autoriser le couper, copier et coller';
 $string['allowcutcopypastedesc'] = 'Autoriser le couper, copier et coller sur les pages ci-dessus';
 $string['allowdevelopertools'] = 'Autoriser les outils de développement';
 $string['allowdevelopertoolsdesc'] = 'Autoriser les outils de développement sur les pages ci-dessus';
-$string['disableallbyroles'] = 'Désactiver selon les rôles';
-$string['disableallbyrolesdesc'] = 'Désactiver tous les rôles ajoutés ci-dessus. Saisir chaque rôle sur une nouvelle ligne. Le nom du rôle ajouté doit correspondre à celui de Moodle.';
+$string['disableallbyroles'] = 'Désactiver tout selon les rôles';
+$string['disableallbyrolesdesc'] = 'Toutes les fonctions suivantes seront désactivées pour tous les rôles énumérés ci-dessus: clic droit, couper, copier, coller et outils de développement.<br/>Saisir chaque rôle sur une nouvelle ligne.<br/>Vous devez placer les noms abrégés des rôles que vous désirez interdire.';
 
 // Warnings.
 $string['rightclick'] = 'Le clic droit est désactivé sur ce site.';
