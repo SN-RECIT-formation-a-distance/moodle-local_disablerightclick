@@ -28,6 +28,7 @@ namespace local_disablerightclick\external;
 
 defined('MOODLE_INTERNAL') || die();
 
+require_once("$CFG->libdir/externallib.php");
 use stdClass;
 use external_api;
 use external_value;
