@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version  = 2024111301;
-$plugin->release = '1.3.1';
-$plugin->supported = [400, 401];
-$plugin->requires  = 2022041912.00; // Moodle 4.0
+$plugin->version  = 2025021900;
+$plugin->release = '1.4.0';
+$plugin->supported = [405, 405];
+$plugin->requires  = 2024071200.00; // Moodle 4.5
 $plugin->component = 'local_disablerightclick';
 $plugin->maturity = MATURITY_STABLE;
 

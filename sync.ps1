@@ -1,5 +1,5 @@
 $from = "moodle-local_disablerightclick/*"
-$to = "shared/recitfad/local/disablerightclick/"
+$to = "shared/recitfad3/local/disablerightclick/"
 $source = "./";
 
 try {
