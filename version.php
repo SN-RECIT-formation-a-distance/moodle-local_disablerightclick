@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version  = 2025021900;
-$plugin->release = '1.4.0';
-$plugin->supported = [405, 405];
+$plugin->version  = 2025021901;
+$plugin->release = '1.4.1';
+$plugin->supported = [405, 501];
 $plugin->requires  = 2024071200.00; // Moodle 4.5
 $plugin->component = 'local_disablerightclick';
 $plugin->maturity = MATURITY_STABLE;
